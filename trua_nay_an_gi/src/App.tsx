@@ -1,14 +1,11 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import './App.css';
-import Navbar from './components/Navigate/Navbar';
+import NavbarWeb from './components/Navigate/NavbarWeb';
 import Header from './pages/Home/Header';
 import About from './pages/About/About';
 import Team from './pages/Team/Team';
 import Footer from './components/Footer/Footer';
 
-class ErrorBoundary extends React.Component<any, {hasError: boolean}> {
+class ErrorBoundary extends React.Component<any, { hasError: boolean }> {
   constructor(props: any) {
     super(props);
     this.state = { hasError: false };
@@ -36,7 +33,7 @@ function App() {
   return (
     <ErrorBoundary>
       <div className="App">
-        <Navbar />
+        <NavbarWeb />
         <Header />
         <About />
         <Team />
