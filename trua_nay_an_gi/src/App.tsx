@@ -4,7 +4,7 @@ import Header from './pages/Home/Header';
 import About from './pages/About/About';
 import Team from './pages/Team/Team';
 import Footer from './components/Footer/Footer';
-
+import Profile from './pages/Profile/Profile';
 class ErrorBoundary extends React.Component<any, { hasError: boolean }> {
   constructor(props: any) {
     super(props);
@@ -36,7 +36,9 @@ function App() {
         <NavbarWeb />
         <Header />
         <About />
+        <Profile/>
         <Team />
+        
         <Footer />
       </div>
     </ErrorBoundary>
